@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Services</title>
+  </head>
+  <body>
+
+    <header>
+    <nav class="section__container nav__container">
+        <div><img src="download.png" width="150" height="150"></div>
+        <ul class="nav__links">
+         <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="index.html#about">About Us</a></li>
+          <li class="link dropdown">
+  <a href="#service">Services ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="services.html#general">General Consultation</a></li>
+    <li><a href="services.html#screening">Screenings</a></li>
+    <li><a href="services.html#vaccination">Vaccinations</a></li>
+    <li><a href="services.html#woundcare">Wound Care</a></li>
+    <li><a href="services.html#others">More Services</a></li>
+  </ul>
+</li>
+          <li class="link"><a href="index.html#pages">Our Staff</a></li>
+        </ul>
+        <a href="https://wa.link/6zczbr"><button class="btn">Contact Us </button></a>
+      </nav>
+
+      <!-- Slideshow background -->
+  <div class="slideshow-container">
+    <div class="mySlides fade" style="background-image: url('promo1.png');"></div>
+    <div class="mySlides fade" style="background-image: url('promo2.png');"></div>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+  </div>
+  </header>
+
+<style>
+
+    h2 {
+        text-align: center;
+        margin: 40px 0 20px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .service-gridd {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .service-cardd {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* bayang neutral */
+        background: #fff;
+        transition: transform 0.3s ease;
+    }
+
+    .service-cardd img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .service-cardd .info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .service-cardd .info h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333; /* tulisan #333 */
+    }
+
+    .service-cardd:hover {
+        transform: scale(1.05);
+    }
+
+    header {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* letak belakang nav */
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #f44336;
+}
+    
+</style>
+</head>
+<body><br><br>
+
+<!-- Section 1 -->
+<h2>Total Care Wellness Destination</h2>
+<div class="service-gridd">
+    <div class="service-cardd">
+        <img src="services/generalcheck.jpg" alt="General Checkup">
+        <div class="info">
+            <h3>General Checkup</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/Blood Test.jpg" alt="Blood Test Screening">
+        <div class="info">
+            <h3>Blood Test Screening</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/student.webp" alt="Mini Laboratory">
+        <div class="info">
+            <h3>Medical Checkup</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/gdlpsv.png" alt="General Ultrasound">
+        <div class="info">
+            <h3>Renew GDL / PSV</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Section 2 -->
+<h2>Laboratary Centre</h2>
+<div class="service-gridd">
+    <div class="service-cardd">
+        <img src="services/ecg.webp" alt="Child Checkup">
+        <div class="info">
+            <h3>Electrocardiogram</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/ufeme.jfif" alt="Vaccination">
+        <div class="info">
+            <h3>Urine Test</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/fbc.jfif" alt="Growth Monitoring">
+        <div class="info">
+            <h3>Full Blood Count</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/rapidtest.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Rapid Test</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Section 3 -->
+<h2>Vaccination & Immunization Centre</h2>
+<div class="service-gridd">
+    <div class="service-cardd">
+        <img src="services/hajjVaksin.jfif" alt="Child Checkup">
+        <div class="info">
+            <h3>Hajj Umrah Vaccine</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/thypVac.png" alt="Vaccination">
+        <div class="info">
+            <h3>Thypoid Vaccine</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/influvac.jfif" alt="Growth Monitoring">
+        <div class="info">
+            <h3>Influenza Vaccine</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/depoInj.png" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Depo Injection</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/B12Vac.jfif" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Vitamin B12 Injection</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/kneeinj.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Knee Injection</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Section 4 -->
+<h2>Man & Women Centre</h2>
+<div class="service-gridd">
+    <div class="service-cardd">
+        <img src="services/pegnancyscan.jpg" alt="Child Checkup">
+        <div class="info">
+            <h3>Pregnancy Scan</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/papsmear.webp" alt="Growth Monitoring">
+        <div class="info">
+            <h3>Pap Smear</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/spermtest.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Sperm Test</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/imlanon.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Family Planning</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Section 5 -->
+<h2>Other Wellness Centre</h2>
+<div class="service-gridd">
+    <div class="service-cardd">
+        <img src="services/dressing.jfif" alt="Child Checkup">
+        <div class="info">
+            <h3>Wound Dressing</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/dressing.png" alt="Vaccination">
+        <div class="info">
+            <h3>Surgical Procedure</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/xray.jpg" alt="Growth Monitoring">
+        <div class="info">
+            <h3>X-ray</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/kneepaint.jpg " alt="Specialist Consultation">
+        <div class="info">
+            <h3>Knee and Joint Treatment</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/nebuliser.webp" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Nebuliser and Nasal Clearance</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/ivdrip.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>IV Drip</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/ultrsound.jfif" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Ultrasound</h3>
+        </div>
+    </div>
+    <div class="service-cardd">
+        <img src="services/homevisit.jpg" alt="Specialist Consultation">
+        <div class="info">
+            <h3>Home Visit</h3>
+        </div>
+    </div>
+</div><br><br>
+
+<footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <img src="logo.png" style="width:90px;height:90px;"><p></p>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="index.html" style="color: inherit; text-decoration: none;">Home</a></p>
+          <p><a href="index.html#about" style="color: inherit; text-decoration: none;">About Us</a></p>
+          <p onclick="document.location='location.html'">Operation Hours</p>
+          <p>Work With Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p><a href="index.html#panel" style="color: inherit; text-decoration: none;">Panel Covered</a></p>
+          <p onclick="document.location='services.html'">Services Provided</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <a href="https://maps.app.goo.gl/r8nu7L6GrGKSxQ7t7" target="_blank" style="color: inherit; text-decoration: none;">No 25, Laluan Saujana Taman Saujana II,
+            31000 Batu Gajah, Perak.</a>
+          </p>
+          <p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ssfamilypc@gmail.com" style="color: inherit; text-decoration: none;">ssfamilypc@gmail.com</a>
+          </p>
+          <p>05-3653396</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <div class="footer__socials">
+            <span><a href="https://www.facebook.com/share/1KtJeLvNBC/" class="ri-facebook-fill" target="_blank"></a></span>
+            <span><a href="https://www.instagram.com/ssfamilypolyclinic?igsh=MTNsdzg0Y2VyZnE3OQ==" class="ri-instagram-fill" target="_blank"></a></span>
+            <span><a href="https://www.tiktok.com/@ssfamilypolyclinic?_t=ZS-8woGhWeYuCP&_r=1" class="ri-tiktok-fill" target="_blank"></a></span>
+            <span><a href="https://wa.link/6zczbr" class="ri-whatsapp-fill" target="_blank"></a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+let slideIndex = 0;
+let slideTimer;
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+  slideTimer = setTimeout(showSlides, 5000); // auto slide
+}
+
+function currentSlide(n) {
+  clearTimeout(slideTimer); // stop auto sekejap
+  slideIndex = n;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+  slideTimer = setTimeout(showSlides, 5000); // sambung auto balik
+}
+
+showSlides(); // mula auto
+</script>
+
+
+  </body>
+</html>

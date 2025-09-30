@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SS Family Polyclinic</title>
+    <style>/*PANEL CSS*/
+        .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .logo-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .logo-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    header {/*HEADER BANNER*/
+      background-image: url(klinik2.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 700px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="section__container nav__container">
+        <div><img src="download.png" width="150" height="150"></div>
+        <ul class="nav__links">
+         <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="#about">About Us</a></li>
+          <li class="link dropdown">
+  <a href="#service">Services ▾</a>
+  <ul class="dropdown-menu">
+    <li><a href="services.html#general">General Consultation</a></li>
+    <li><a href="services.html#screening">Screenings</a></li>
+    <li><a href="services.html#vaccination">Vaccinations</a></li>
+    <li><a href="services.html#woundcare">Wound Care</a></li>
+    <li><a href="services.html#others">More Services</a></li>
+  </ul>
+</li>
+          <li class="link"><a href="#pages">Our Staff</a></li>
+        </ul>
+        <a href="https://wa.link/6zczbr"><button class="btn">Contact Us </button></a>
+      </nav>
+    </header>
+
+    <section class="section__container service__container" id="service"> 
+      <div class="service__header">
+        <div class="service__header__content">
+          <h2 class="section__header">Our Special service</h2>
+          <p>
+            We access patients overall health through medical examinations,
+            various diagnostic tests and high-tech procedures.
+          </p>
+        </div>
+      </div>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-microscope-line"></i></span>
+          <h4>Regenerative Medicine Consultation</h4>
+          <p>
+            A complete health assessment focusing on areas that can be
+            improved with our treatments and services. It is complemented
+            by a physical examination.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-mental-health-line"></i></span>
+          <h4>Treatment Confirmation Consultation</h4>
+          <p>
+            Mandatory medical verification of the effectiveness of certain
+            treatments that require professional confirmation.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-hospital-line"></i></span>
+          <h4>Health
+            Assessment</h4>
+          <p>
+            Consultation with a healthcare professional, which includes a
+            series of tests to collect the necessery information about
+            patient health status.
+
+          </p>
+        </div>
+      </div> <br><br>
+      <p align="right"><button onclick="document.location='services.html'" class="btn">More Services</button></p>
+    </section>
+    <section class="section__container about__container" id="about">
+      <div class="about__content">
+        <h2 class="section__header">About Us</h2>
+        <p>
+          In November 2023, SS Family Polyclinic became a part of Malaysia's healthcare 
+          industry as a paid healthcare provider. We founded by two very compassionate doctors with almost 
+          13 years of expertise in medicine and working experience in government health clinics and government 
+          hospital.
+        </p>
+        <p>
+          Customers and patients can book slots for medical consultation in advance on our website for their 
+          convenience. We are also ready to do house calls with a very affordable rate. We are also trained to helps mother 
+          with newborns on their breast feeding journey. We are able to understand the struggles of working parents and 
+          ready to help them in their journey with a newborn.
+        </p>
+        <p>
+          Our clinic are currently operating from 8am to 11pm, seven days a week including public holidays 
+          and we hope to run a 24 hour clinic in the future to meet the ever-increasing demand of our patients.
+        </p>
+      </div>
+      <div class="about__image">
+        <img src="k3.PNG" alt="about" />
+      </div>
+    </section>
+
+    <section class="section__container why__container" id="blog">
+      <div class="why__image">
+        <br><br><br><br><img src="k1.PNG" alt="why choose us" />
+      </div>
+      <div class="why__content">
+        <h2 class="section__header">Why Choose Us</h2>
+        <div class="why__grid">
+          <span><i class="ri-truck-line"></i></span>
+          <div>
+            <h4>Convenient Location</h4>
+            <p>
+              Convenient public transport and many parking accessibility.
+            </p>
+          </div>
+          <span><i class="ri-hand-heart-line"></i></span>
+          <div>
+            <h4>High Level of Service</h4>
+            <p>
+              Once patient has chosen us, we promise the best
+              service and treatment.
+            </p>
+          </div>
+          <span><i class="ri-hospital-line"></i></span>
+          <div>
+            <h4>Modern Equipment</h4>
+            <p>
+              We use the latest equipment that allows us to accurately and
+              quickly carry out a complete diagnosis.
+            </p>
+          </div>
+          <span><i class="ri-book-line"></i></span>
+          <div>
+            <h4>Versatility</h4>
+            <p>
+              Variety of health services offered makes it
+              easier for patient to get the treatment.
+            </p>
+          </div>
+          <span><i class="ri-stethoscope-line"></i></span>
+          <div>
+            <h4>High Quality of Medical Care</h4>
+            <p>
+              The provision of medical care in accordance with the procedures
+              and standards of medical activity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container doctors__container" id="pages">
+      <div class="doctors__header">
+        <div class="doctors__header__content">
+          <h2 class="section__header">Our Doctor & Staff</h2>
+          <p>
+            We take pride in our exceptional team of doctors, each a specialist
+            in their respective fields.
+          </p>
+        </div>
+      </div><br><br>
+      <div class="carousel-container">
+  <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+
+  <div class="carousel-track" id="staffCarousel">
+    <div class="staff-card">
+      <div class="staff-box">
+        <img src="staff/DrSolehah.jfif" alt="Dr. Solehah" />
+        <div class="staff-info">
+          <h4>Dr. Solehah Binti Musa</h4>
+          <p>MD (Russia)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff-card">
+      <div class="staff-box">
+        <img src="staff/malini.png" alt="Ms. Malini" />
+        <div class="staff-info">
+          <h4>Ms. Malini</h4>
+          <p>Clinic Assistant</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff-card">
+      <div class="staff-box">
+        <img src="" alt="Ms. Prieya" />
+        <div class="staff-info">
+          <h4>Mr. Syakir</h4>
+          <p>Radiographer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff-card">
+      <div class="staff-box">
+        <img src="staff/prieya.jfif" alt="Ms. Athira" />
+        <div class="staff-info">
+          <h4>Ms. Prieya</h4>
+          <p>Clinic Assistant</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="staff-card">
+      <div class="staff-box">
+        <img src="staff/athira.jpg" alt="Ms. Athira" />
+        <div class="staff-info">
+          <h4>Ms. Athira</h4>
+          <p>Clinic Assistant</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script>
+  const track = document.getElementById('staffCarousel');
+  let currentIndex = 0;
+
+  function moveSlide(direction) {
+    const visibleCards = 3;
+    const card = track.querySelector('.staff-card');
+    const cardWidth = card.offsetWidth;
+    const totalCards = track.children.length;
+    const maxIndex = totalCards - visibleCards;
+
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+</script>
+    </section>
+
+    <section class="section__container" id="panel">
+      <h2 class="section__panel">Panel Provided</h2>
+      <div class="logo-grid">
+    <img src="panel/aia.png">
+    <img src="panel/redalert.png">
+    <img src="panel/peka.png">
+    <img src="panel/healthconnect.png">
+    <img src="panel/pmcare.png">
+    <img src="panel/micare.png">
+    <img src="panel/madani.jpg">
+    <img src="panel/wecare.png">
+    <img src="panel/emas.png">
+    <img src="panel/medilink.png">
+    <img src="panel/corpcare.png">
+    <img src="panel/healthmetric.png">
+    <img src="panel/uitm.png">
+    <img src="panel/compumed.png">
+    <img src="panel/tnb.png">
+    <img src="panel/greateastern.png">
+    <img src="panel/unisem.png">
+    <img src="panel/sehati.png">
+    <img src="panel/mednefits.png">
+    <img src="panel/international.jfif">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <img src="logo.png" style="width:90px;height:90px;"><p></p>
+          <p>
+            We are honored to be a part of your healthcare journey and committed
+            to delivering compassionate, personalized, and top-notch care every
+            step of the way.
+          </p>
+          <p>
+            Trust us with your health, and let us work together to achieve the
+            best possible outcomes for you and your loved ones.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>About Us</h4>
+          <p><a href="#home" style="color: inherit; text-decoration: none;">Home</a></p>
+          <p><a href="#about" style="color: inherit; text-decoration: none;">About Us</a></p>
+          <p onclick="document.location='location.html'">Operation Hours</p>
+          <p>Work With Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <p><a href="#panel" style="color: inherit; text-decoration: none;">Panel Covered</a></p>
+          <p onclick="document.location='services.html'">Services Provided</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <p>
+            <a href="https://maps.app.goo.gl/r8nu7L6GrGKSxQ7t7" target="_blank" style="color: inherit; text-decoration: none;">No 25, Laluan Saujana Taman Saujana II,
+            31000 Batu Gajah, Perak.</a>
+          </p>
+          <p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ssfamilypc@gmail.com" style="color: inherit; text-decoration: none;">ssfamilypc@gmail.com</a>
+          </p>
+          <p>05-3653396</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <div class="footer__bar__content">
+          <div class="footer__socials">
+            <span><a href="https://www.facebook.com/share/1KtJeLvNBC/" class="ri-facebook-fill" target="_blank"></a></span>
+            <span><a href="https://www.instagram.com/ssfamilypolyclinic?igsh=MTNsdzg0Y2VyZnE3OQ==" class="ri-instagram-fill" target="_blank"></a></span>
+            <span><a href="https://www.tiktok.com/@ssfamilypolyclinic?_t=ZS-8woGhWeYuCP&_r=1" class="ri-tiktok-fill" target="_blank"></a></span>
+            <span><a href="https://wa.link/6zczbr" class="ri-whatsapp-fill" target="_blank"></a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
