@@ -42,6 +42,40 @@
       background-repeat: no-repeat;
       height: 700px;
     }
+/*phone view*/
+      @media screen and (max-width: 768px) {
+
+  header {
+    height: 350px;
+  }
+
+  .nav__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about__container,
+  .service__grid,
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .about__image img,
+  .why__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
     </style>
   </head>
 
